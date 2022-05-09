@@ -1,0 +1,113 @@
+'    ____                  ____             ____
+'   / __/_ _____  ___ ____/ __/__________  / / /
+'  _\ \/ // / _ \/ -_) __/\ \/ __/ __/ _ \/ / / 
+' /___/\_,_/ .__/\__/_/ /___/\__/_/  \___/_/_/  
+'         /_/                  game engine
+'
+' Cross-reference for tiles and sprites.
+'
+' Syntax for each line is:
+'      [number] [tilename] [tile description]
+' Ex.  5130 wirecornerul upper-left corner of wire path
+'
+' Tile numbers may go from 1-32767. (Tile 0 is empty space.)
+' Tiles 9000-9999 are invisible during gameplay.
+'
+' Commands:
+'      # tiles              < tile declarations start here
+'      # sprites            < sprite descriptions start here
+' __________________________________________________________
+
+
+# tiles
+
+5 coin a coin
+6 coin2 a coin (alternate)
+7 coinred a red coin
+
+11 block1 block "1"
+12 block2 block "2"
+13 block3 block "3"
+14 block4 block "4"
+15 grayblock a gray block
+16 brownblock a brown block
+17 brick a breakable brick
+18 brick2 a breakable brick (alternate)
+20 questionblock a "?" block, use with item sprite
+21 questionblockdead a dead "?" block
+22 excblock a blue "!" block
+23 excblockempty a blue "!" block (not active)
+24 greenblock a green block
+25 brownblock2 another brown block
+26 brickgray a breakable brick (for castles)
+27 brickgraybig a large breakable brick (for castles)
+28 brickgreen a green, breakable brick
+29 ground an old-style ground tile
+30 groundgreen a green old-style ground tile
+
+
+31 grassltop grassy floor (top, left end)
+32 grasstop grassy floor (top)
+33 grassrtop grassy floor (top, right end)
+50 dirtlmiddle dirt (middle, left end)
+51 dirtmiddle dirt (middle)
+52 dirtrmiddle dirt (middle, right end)
+53 dirtlbottom dirt (bottom, left end)
+54 dirtbottom dirt (bottom)
+55 dirtrbottom dirt (bottom, right end)
+60 treetopl left end of treetop
+61 treetopm middle of treetop
+62 treetopr right end of treetop
+63 treetopl-snow left end of treetop, snow-covered
+64 treetopm-snow middle of treetop, snow-covered
+65 treetopr-snow right end of treetop, snow-covered
+
+70 seacoral sea coral (obstruction)
+71 seafloor sea floor block
+80 wood wooden floor
+90 metal metal floor
+
+100 pipeh-left left end of horizontal pipe
+101 pipeh horizontal pipe
+110 pipev-top top end of vertical pipe
+111 pipev vertical pipe
+120 pipegoaltop top end of a goal pipe
+121 pipegoal goal pipe
+
+300 watertop swimmable water (top)
+301 watermiddle swimmable water (middle)
+
+530 treetopbase base of tree (walkable)
+541 cloud single cloud
+542 cloud2 a tooth-shaped cloud
+543 cloud3 a creepy cloud
+550 pyramidl left side of a pyramid
+551 pyramidr right side of a pyramid
+
+
+600 dirblockdown a "down" directional block
+601 dirblockup an "up" directional block
+
+700 lavatop lethal lava (top)
+701 lavamiddle lethal lava (middle)
+
+
+9000 levelstart starting point of level
+9001 levelend finishing point of level
+9100 diehere player dies when touched
+
+# sprites
+
+2000 goomba a goomba
+5000 greensquare A green square for debug purposes.
+5001 orangesquare An orange square for debug purposes.
+9500 pipeexit pipe exit point - use to activate pipe
+1000 player the player, runner! (don't put this in your level.)
+1001 player-r1 [the player]
+1002 player-r2 [the player]
+1003 player-l1 [the player]
+1004 player-l2 [the player]
+1005 player-jumpr [the player]
+1006 player-jumpl [the player]
+1007 player-standr [the player]
+1008 player-standl [the player]
